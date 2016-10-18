@@ -15,6 +15,8 @@
 		5C5770421DB61BBC008C8629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5770401DB61BBC008C8629 /* LaunchScreen.storyboard */; };
 		5C57704D1DB61BBC008C8629 /* RFAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C57704C1DB61BBC008C8629 /* RFAlertViewDemoTests.m */; };
 		5C5770581DB61BBC008C8629 /* RFAlertViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5770571DB61BBC008C8629 /* RFAlertViewDemoUITests.m */; };
+		5C5770681DB61C1A008C8629 /* RFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5770671DB61C1A008C8629 /* RFAlertView.m */; };
+		5C57706B1DB61C3F008C8629 /* UILabel+AlertAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C57706A1DB61C3F008C8629 /* UILabel+AlertAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		5C5770531DB61BBC008C8629 /* RFAlertViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFAlertViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5770571DB61BBC008C8629 /* RFAlertViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFAlertViewDemoUITests.m; sourceTree = "<group>"; };
 		5C5770591DB61BBC008C8629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C5770661DB61C1A008C8629 /* RFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAlertView.h; sourceTree = "<group>"; };
+		5C5770671DB61C1A008C8629 /* RFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAlertView.m; sourceTree = "<group>"; };
+		5C5770691DB61C3F008C8629 /* UILabel+AlertAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AlertAdd.h"; sourceTree = "<group>"; };
+		5C57706A1DB61C3F008C8629 /* UILabel+AlertAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AlertAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		5C5770311DB61BBC008C8629 /* RFAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5C5770651DB61BE9008C8629 /* RFAlertView */,
 				5C5770351DB61BBC008C8629 /* AppDelegate.h */,
 				5C5770361DB61BBC008C8629 /* AppDelegate.m */,
 				5C5770381DB61BBC008C8629 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				5C5770591DB61BBC008C8629 /* Info.plist */,
 			);
 			path = RFAlertViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		5C5770651DB61BE9008C8629 /* RFAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				5C5770661DB61C1A008C8629 /* RFAlertView.h */,
+				5C5770671DB61C1A008C8629 /* RFAlertView.m */,
+				5C5770691DB61C3F008C8629 /* UILabel+AlertAdd.h */,
+				5C57706A1DB61C3F008C8629 /* UILabel+AlertAdd.m */,
+			);
+			path = RFAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +225,7 @@
 				TargetAttributes = {
 					5C57702E1DB61BBC008C8629 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VV5P9XUYAQ;
 						ProvisioningStyle = Automatic;
 					};
 					5C5770471DB61BBC008C8629 = {
@@ -275,7 +294,9 @@
 			files = (
 				5C57703A1DB61BBC008C8629 /* ViewController.m in Sources */,
 				5C5770371DB61BBC008C8629 /* AppDelegate.m in Sources */,
+				5C57706B1DB61C3F008C8629 /* UILabel+AlertAdd.m in Sources */,
 				5C5770341DB61BBC008C8629 /* main.m in Sources */,
+				5C5770681DB61C1A008C8629 /* RFAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VV5P9XUYAQ;
 				INFOPLIST_FILE = RFAlertViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RockyFung.RFAlertViewDemo;
@@ -435,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VV5P9XUYAQ;
 				INFOPLIST_FILE = RFAlertViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RockyFung.RFAlertViewDemo;
