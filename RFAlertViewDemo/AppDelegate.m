@@ -17,7 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     // 这是在test分支添加的内容
+
+    // 这是在主分支添加的内容
+
     return YES;
 }
 
